@@ -4,19 +4,13 @@ HTML (HyperText Markup Language) Example
 
 # Table Of Contents
 
- <ul>
-    <li>Typography</li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
- </ul>
+[HTML basics](./snipets/00-basics.md)
+
+[HTML forms and validations](./snipets/01-forms-validations.md)
+
+[HTML best practice](./snipets/02-best-practice.md)
+
+[HTML SEO](./snipets/03-SEO-basic.md)
 
 # HTML Resources
 
