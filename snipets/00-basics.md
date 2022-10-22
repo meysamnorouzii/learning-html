@@ -1,11 +1,5 @@
 # HTML Basics
 
-# Resources
-
-> [w3schools](https://www.w3schools.com/html/default.asp)
-
-> [mdn](https://developer.mozilla.org/en-US/docs/Web/HTML)
-
 # Table Of Contents
 
 1. <a href="#html-structure">HTML Structure</a>
@@ -22,6 +16,8 @@
 12. <a href="#computer-code">Computer Code</a>
 13. <a href="#semantic">Semantic</a>
 14. <a href="#html-uniform-resource-locators">HTML Uniform Resource Locators</a>
+15. <a href="#graphics">Graphics</a>
+16. <a href="#media">Media</a>
 
 # HTML Structure
 
@@ -652,3 +648,74 @@ Explanation:
     <td>A file on your computer</td>
   </tr>
 </table>
+
+# Graphics
+
+```html
+<!-- Canvas -->
+<canvas id="myCanvas" width="200" height="100"></canvas>
+
+<!-- SVG -->
+<svg width="100" height="100">
+  <circle
+    cx="50"
+    cy="50"
+    r="40"
+    stroke="green"
+    stroke-width="4"
+    fill="yellow"
+  />
+</svg>
+
+<svg width="400" height="100">
+  <rect
+    width="400"
+    height="100"
+    style="fill:rgb(0,0,255);stroke-width:10;stroke:rgb(0,0,0)"
+  />
+</svg>
+```
+
+# Media
+
+```html
+<!-- video -->
+<video width="320" height="240" controls>
+  <source src="movie.mp4" type="video/mp4" />
+  <source src="movie.ogg" type="video/ogg" />
+  Your browser does not support the video tag.
+</video>
+
+<video width="320" height="240" autoplay muted>...</video>
+
+<!-- audio -->
+<audio controls>
+  <source src="horse.ogg" type="audio/ogg" />
+  <source src="horse.mp3" type="audio/mpeg" />
+  Your browser does not support the audio element.
+</audio>
+
+<audio controls autoplay muted>...</audio>
+
+<!-- plug-ins -->
+<object width="100%" height="500px" data="snippet.html"></object>
+<embed width="100%" height="500px" src="snippet.html" />
+
+<!-- youtube -->
+
+<!-- loop=1 -->
+<iframe
+  width="420"
+  height="315"
+  src="https://www.youtube.com/embed/tgbNymZ7vqY?playlist=tgbNymZ7vqY&loop=1"
+>
+</iframe>
+
+<!-- autoplay=1, mute=1 or controls=0 -->
+<iframe
+  width="420"
+  height="315"
+  src="https://www.youtube.com/embed/tgbNymZ7vqY?autoplay=1&mute=1"
+>
+</iframe>
+```
